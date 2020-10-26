@@ -36,7 +36,30 @@ const siteContent = {
     "copyright" : "Copyright Great Idea! 2018"
   },
 };
+let links = document.querySelectorAll("nav a");
+links.forEach((link) =>  console.log(link.textContent))
+// let nav1 = siteContent["nav"] ["nav-item-1"]
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+let logo2 = document.getElementById("cta-img")
+logo2.setAttribute("src", siteContent["cta"] ["img-src"])
+
+let img3 = document.getElementById("middle-img")
+img3.setAttribute("src", siteContent["main-content"] ["middle-img-src"])
+//                 ------IMG END------
+
+let BigText = document.querySelector("h1");
+BigText.textContent = "DOM IS Awesome";
+
+let button = document.querySelector("button");
+button.textContent = siteContent["cta"] ["button"]
+
+let features = document.querySelector("h4");
+features.textContent = siteContent["main-content"] ["features-h4"]
+
+let featuresContent = document.querySelectorAll("p")
+featuresContent.textContent = siteContent["main-content"] ["features-content"] 
