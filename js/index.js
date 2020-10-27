@@ -37,6 +37,23 @@ const siteContent = {
   },
 };
 
+const link1 = document.querySelector("header nav a");
+link1.textContent = "Services"
+
+const link2 = link1.nextElementSibling;
+link2.textContent = "Product"
+
+const link3 = link2.nextElementSibling;
+link3.textContent = "Vision"
+
+const link4 = link3.nextElementSibling;
+link4.textContent = "Features"
+
+const link5 = link4.nextElementSibling;
+link5.textContent = "About"
+
+const link6 = link5.nextElementSibling;
+link6.textContent = "Contact"
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
@@ -61,8 +78,8 @@ button.textContent = siteContent["cta"] ["button"]
 let features = document.querySelector("h4");
 features.textContent = "Features"
 
-let featuresContent = document.querySelector("p")
-featuresContent.textContent = siteContent["main-content"] ["features-content"] 
+let featuresContent = features.nextElementSibling;
+featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
-let about = document.querySelector("main-content.nth-of-type(3)")
-about.textContent = "About";
+let about = featuresContent.nextElementSibling;
+about.textContent = "About"
