@@ -36,9 +36,7 @@ const siteContent = {
     "copyright" : "Copyright Great Idea! 2018"
   },
 };
-let links = document.querySelectorAll("nav a");
-links.forEach((link) =>  console.log(link.textContent))
-// let nav1 = siteContent["nav"] ["nav-item-1"]
+
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
@@ -58,8 +56,13 @@ BigText.textContent = "DOM IS Awesome";
 let button = document.querySelector("button");
 button.textContent = siteContent["cta"] ["button"]
 
-let features = document.querySelector("h4");
-features.textContent = siteContent["main-content"] ["features-h4"]
 
-let featuresContent = document.querySelectorAll("p")
+
+let features = document.querySelector("h4");
+features.textContent = "Features"
+
+let featuresContent = document.querySelector("p")
 featuresContent.textContent = siteContent["main-content"] ["features-content"] 
+
+let about = document.querySelector("main-content.nth-of-type(3)")
+about.textContent = "About";
