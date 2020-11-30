@@ -36,7 +36,7 @@ const siteContent = {
     "copyright" : "Copyright Great Idea! 2018"
   },
 };
-
+// <-----------nav-bar--------------->
 const link1 = document.querySelector("header nav a");
 link1.textContent = "Services"
 
@@ -65,15 +65,14 @@ logo2.setAttribute("src", siteContent["cta"] ["img-src"])
 
 let img3 = document.getElementById("middle-img")
 img3.setAttribute("src", siteContent["main-content"] ["middle-img-src"])
-//                 ------IMG END------
+//                 <------IMG END------>
 
+// <---------------MIddle content----------------->
 let BigText = document.querySelector("h1");
 BigText.textContent = "DOM IS Awesome";
 
 let button = document.querySelector("button");
 button.textContent = siteContent["cta"] ["button"]
-
-
 
 let features = document.querySelector("h4");
 features.textContent = "Features"
@@ -83,3 +82,8 @@ featuresContent.textContent = "Features content elementum magna eros, ac posuere
 
 let about = featuresContent.nextElementSibling;
 about.textContent = "About"
+
+// <---------------middle content end---------------->
+
+const bottomContent = document.querySelector("bottom-content");
+bottomContent.textContent = siteContent["main-content"] ["services-h4"]
