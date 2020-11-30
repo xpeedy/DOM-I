@@ -68,22 +68,38 @@ img3.setAttribute("src", siteContent["main-content"] ["middle-img-src"])
 //                 <------IMG END------>
 
 // <---------------MIddle content----------------->
+let space = document.createElement("br");
+space.textContent = "is";
 let BigText = document.querySelector("h1");
-BigText.textContent = "DOM IS Awesome";
+BigText.textContent = "DOM Is Awesome";
+BigText.appendChild(space)
+
 
 let button = document.querySelector("button");
 button.textContent = siteContent["cta"] ["button"]
 
-let features = document.querySelector("h4");
+let features = document.querySelector(".text-content h4");
 features.textContent = "Features"
 
 let featuresContent = features.nextElementSibling;
 featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
-let about = featuresContent.nextElementSibling;
-about.textContent = "About"
 
 // <---------------middle content end---------------->
 
-const bottomContent = document.querySelector("bottom-content");
-bottomContent.textContent = siteContent["main-content"] ["services-h4"]
+const bottomContent = document.querySelector(".contact h4");
+bottomContent.textContent = siteContent["contact"] ["contact-h4"]
+
+let paragraph = bottomContent.nextElementSibling;
+paragraph.textContent = siteContent["contact"] ["address"]
+
+let paragraph2 = paragraph.nextElementSibling;
+paragraph2.textContent = siteContent["contact"] ["phone"]
+
+let paragraph3 = paragraph2.nextElementSibling;
+paragraph3.textContent = siteContent["contact"] ["email"]
+
+// <---------------middle content end---------------->
+
+const footer = document.querySelector("footer");
+footer.textContent = siteContent["footer"] ["copyright"]
