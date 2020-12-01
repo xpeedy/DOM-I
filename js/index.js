@@ -36,7 +36,70 @@ const siteContent = {
     "copyright" : "Copyright Great Idea! 2018"
   },
 };
+// <-----------nav-bar--------------->
+const link1 = document.querySelector("header nav a");
+link1.textContent = "Services"
+
+const link2 = link1.nextElementSibling;
+link2.textContent = "Product"
+
+const link3 = link2.nextElementSibling;
+link3.textContent = "Vision"
+
+const link4 = link3.nextElementSibling;
+link4.textContent = "Features"
+
+const link5 = link4.nextElementSibling;
+link5.textContent = "About"
+
+const link6 = link5.nextElementSibling;
+link6.textContent = "Contact"
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+let logo2 = document.getElementById("cta-img")
+logo2.setAttribute("src", siteContent["cta"] ["img-src"])
+
+let img3 = document.getElementById("middle-img")
+img3.setAttribute("src", siteContent["main-content"] ["middle-img-src"])
+//                 <------IMG END------>
+
+// <---------------MIddle content----------------->
+
+let BigText = document.querySelector("h1");
+BigText.innerHTML = "<h1>DOM <br>Is<br> Awesome</h1>";
+
+
+
+let button = document.querySelector("button");
+button.textContent = siteContent["cta"] ["button"]
+
+let features = document.querySelector(".text-content h4");
+features.textContent = "Features"
+
+let featuresContent = features.nextElementSibling;
+featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+
+
+// <---------------middle content end---------------->
+
+const bottomContent = document.querySelector(".contact h4");
+bottomContent.textContent = siteContent["contact"] ["contact-h4"]
+
+let paragraph = bottomContent.nextElementSibling;
+paragraph.textContent = siteContent["contact"] ["address"]
+
+let paragraph2 = paragraph.nextElementSibling;
+paragraph2.textContent = siteContent["contact"] ["phone"]
+
+let paragraph3 = paragraph2.nextElementSibling;
+paragraph3.textContent = siteContent["contact"] ["email"]
+
+// <---------------middle content end---------------->
+
+const footer = document.querySelector("footer");
+footer.textContent = siteContent["footer"] ["copyright"]
