@@ -68,11 +68,10 @@ img3.setAttribute("src", siteContent["main-content"] ["middle-img-src"])
 //                 <------IMG END------>
 
 // <---------------MIddle content----------------->
-let space = document.createElement("br");
-space.textContent = "is";
+
 let BigText = document.querySelector("h1");
-BigText.textContent = "DOM Is Awesome";
-BigText.appendChild(space)
+BigText.innerHTML = "<h1>DOM <br>Is<br> Awesome</h1>";
+
 
 
 let button = document.querySelector("button");
@@ -83,6 +82,7 @@ features.textContent = "Features"
 
 let featuresContent = features.nextElementSibling;
 featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
 
 
 // <---------------middle content end---------------->
