@@ -75,15 +75,31 @@ BigText.innerHTML = "<h1>DOM <br>Is<br> Awesome</h1>";
 let button = document.querySelector("button");
 button.textContent = siteContent["cta"] ["button"]
 
-let features = document.querySelector(".text-content h4");
-features.textContent = "Features"
+let h4List = document.querySelectorAll(".text-content h4");
 
-let featuresContent = features.nextElementSibling;
-featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+h4List[0].textContent = "Features"
+let featuresContent = h4List[0].nextElementSibling;
+featuresContent.textContent = siteContent["main-content"] ["features-content"]
 
-// let content = document.querySelectorAll("text-content")
-// content.forEach((i) => {
+h4List[1].textContent = "About"
+let aboutText = h4List[1].nextElementSibling;
+aboutText.textContent = siteContent["main-content"] ["about-content"];
 
+h4List[2].textContent = "Services"
+let servicesText = h4List[2].nextElementSibling;
+servicesText.textContent = siteContent["main-content"] ["services-content"];
+
+h4List[3].textContent = "Product"
+let productText = h4List[3].nextElementSibling;
+productText.textContent = siteContent["main-content"] ["product-content"];
+
+h4List[4].textContent = "Vision"
+let visionText = h4List[4].nextElementSibling;
+visionText.textContent = siteContent["main-content"] ["vision-content"]
+
+// features.forEach((word) => {
+//   word[i].textContent = siteContent["main-content"]
+//   console.log(word.textContent)
 // })
 
 // <---------------middle content end---------------->
