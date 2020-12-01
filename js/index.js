@@ -72,8 +72,6 @@ img3.setAttribute("src", siteContent["main-content"] ["middle-img-src"])
 let BigText = document.querySelector("h1");
 BigText.innerHTML = "<h1>DOM <br>Is<br> Awesome</h1>";
 
-
-
 let button = document.querySelector("button");
 button.textContent = siteContent["cta"] ["button"]
 
@@ -83,7 +81,10 @@ features.textContent = "Features"
 let featuresContent = features.nextElementSibling;
 featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
+// let content = document.querySelectorAll("text-content")
+// content.forEach((i) => {
 
+// })
 
 // <---------------middle content end---------------->
 
